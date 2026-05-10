@@ -1,8 +1,12 @@
 Name: FITX – AI FITNESS TRAINER
+
+
 Description:
 FITX is an AI-powered fitness and wellness platform designed to help users maintain a healthy lifestyle through personalized workout plans, calorie tracking, step monitoring, diet recommendations, and motivational fitness assistance.
 The platform integrates Power Apps, Power Automate, Power BI, and full-stack development technologies to deliver a smart fitness ecosystem capable of monitoring workouts, calories burned, daily steps, nutrition intake, and user progress analytics from a single unified dashboard.
 The system uses AI-based recommendations to generate adaptive workout routines and diet plans based on user goals such as weight loss, muscle gain.
+
+
 
 Functional Requirements:
 Authentication:
@@ -10,11 +14,15 @@ Authentication:
 •	Password encryption and secure session handling
 •	User profile management
 
+
+
 User Profile Management:
 •	Store age, weight, height, gender, and fitness goals
 •	BMI calculation
 •	Fitness level classification
 •	Personalized recommendations
+
+
 
 AI Workout Planner:
 •	Generate personalized workout plans
@@ -22,20 +30,28 @@ AI Workout Planner:
 •	Exercise recommendations by muscle group
 •	Workout scheduling and reminders
 
+
+
 Exercise Tracking:
 •	Track sets, reps, and workout duration
 •	Calculate calories burned per exercise
 •	Daily and weekly workout logs
 •	Exercise history maintenance
 
+
+
 Calories Burned Monitoring:
 •	Real-time calorie burn calculation
 •	Daily calorie expenditure report
+
+
 
 Step Count Monitoring:
 •	Daily step tracking
 •	Distance walked calculation
 •	Activity level monitoring
+
+
 
 Diet & Nutrition Tracking:
 •	AI-generated meal plans
@@ -43,10 +59,14 @@ Diet & Nutrition Tracking:
 •	Protein, carbs, and fats monitoring
 •	Daily nutrition recommendations
 
+
+
 AI Motivation System:
 •	Smart motivational notifications
 •	Gym reminders
 •	Personalized encouragement messages
+
+
 
 Notifications & Alerts:
 •	Push notifications
@@ -54,6 +74,8 @@ Notifications & Alerts:
 •	Step goal alerts
 •	Water intake reminders
 •	Diet schedule alerts
+
+
 
 Analytics Dashboard:
 •	Calories burned analytics
@@ -63,9 +85,14 @@ Analytics Dashboard:
 •	Goal completion analytics
 
 
+
+
 Problem Statement:
 Many fitness enthusiasts struggle to maintain consistency in workouts, track calories accurately, follow proper diet plans, and stay motivated throughout their fitness journey. Existing fitness applications often lack personalization, intelligent recommendations, and integrated analytics for monitoring overall health progress.
 There is a need for a lightweight, AI-driven fitness platform that combines workout planning, calorie tracking, step monitoring, diet management, and motivational assistance within a single unified system.
+
+
+
 
 Proposed Solution:
 FITX provides a complete AI-powered fitness ecosystem using Power Platform technologies and full-stack development.
@@ -77,19 +104,28 @@ The application integrates:
 •	AI recommendation engine for adaptive workout and diet planning
 The system continuously monitors user activities, calculates calories burned, tracks steps, and provides intelligent recommendations to improve user fitness performance.
 
+
+
+
 Technologies Used
 Frontend:
 •	Power Apps
 •	React.js
 •	JavaScript
 
+
+
 Backend:
 •	Node.js
 •	Express.js
 •	Python (AI Logic)
 
+
+
 Database:
 •	SharePoint
+
+
 
 APIs Used
 •	Google Fit API
@@ -101,10 +137,17 @@ APIs Used
 •	OpenStreetMap API
 •	Hugging Face AI API
 
+
+
+
 Microsoft Power Platform
 •	Power Apps
 •	Power Automate
 •	Power BI
+
+
+
+
 
 System Architecture
 FITX follows a multi-layer architecture where the Power Apps frontend communicates with backend APIs developed using Node.js and Python services.
@@ -135,6 +178,10 @@ Data Stored in Database
 Power BI Analytics Dashboard
         ↓
 AI Motivation & Notifications
+
+
+
+
 In Scope:
 •	AI workout recommendation
 •	Calories burned tracking
@@ -148,6 +195,10 @@ In Scope:
 •	Activity monitoring
 •	User progress tracking
 
+
+
+
+
 Out of Scope
 •	Live video personal training
 •	Wearable device manufacturing
@@ -156,16 +207,33 @@ Out of Scope
 •	Enterprise gym management
 •	Real-time multiplayer fitness competitions
 •	Offline AI model training
+
+
+
+
+
 Future Enhancements
 Day 1–2:
 •	Water intake tracker
 •	WorkOut monitoring dashboard
+
+
+
 Day 3:
 •	Integrating WorkFlows
 •	Screens Integration  
+
+
+
 Day 4:
 •	BackEnd Integration
 •	API Integration
+
+Day 5:
+•      Testing
+•      Fixing
+
+
 
 Conclusion
 FITX is a modern AI-powered fitness management platform that combines intelligent workout planning, calorie monitoring, diet tracking, and motivational systems into a single integrated solution.
