@@ -1,0 +1,6 @@
+def recommend(goal):
+    if goal == "weight_loss":
+        return "Cardio Workout"
+    return "Strength Training"
+
+print(recommend("weight_loss"))

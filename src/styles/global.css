@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-dark: #050505;
+  --bg-card: rgba(20, 20, 20, 0.7);
+  --bg-card-hover: rgba(30, 30, 30, 0.8);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  
+  --primary-red: #ff2a2a;
+  --primary-red-hover: #ff4d4d;
+  --neon-red: 0 0 10px rgba(255, 42, 42, 0.5), 0 0 20px rgba(255, 42, 42, 0.3);
+  --neon-red-intense: 0 0 15px rgba(255, 42, 42, 0.8), 0 0 30px rgba(255, 42, 42, 0.5);
+  
+  --border-glass: 1px solid rgba(255, 255, 255, 0.05);
+  --border-neon: 1px solid rgba(255, 42, 42, 0.3);
+  
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* subtle dark gradient background */
+  background: radial-gradient(circle at top right, #1a0505 0%, #050505 40%, #000000 100%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+a:hover {
+  color: var(--primary-red);
+}
+
+button {
+  font-family: var(--font-heading);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: var(--border-glass);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.glass-panel:hover {
+  border: var(--border-neon);
+  box-shadow: 0 8px 32px 0 rgba(255, 42, 42, 0.05);
+}
+
+/* Neon Components */
+.neon-btn {
+  background: transparent;
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--neon-red);
+}
+
+.neon-btn:hover {
+  background: var(--primary-red);
+  color: #fff;
+  box-shadow: var(--neon-red-intense);
+  transform: translateY(-2px);
+}
+
+.neon-btn-solid {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+  box-shadow: var(--neon-red);
+}
+
+.neon-btn-solid:hover {
+  background: var(--primary-red-hover);
+  box-shadow: var(--neon-red-intense);
+  transform: translateY(-2px);
+}
+
+/* Form inputs */
+.cyber-input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  transition: var(--transition-smooth);
+  margin-bottom: 1rem;
+}
+
+.cyber-input:focus {
+  outline: none;
+  border-color: var(--primary-red);
+  box-shadow: 0 0 8px rgba(255, 42, 42, 0.3);
+}
+
+/* Progress Rings / Bars */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #8b0000, var(--primary-red));
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 42, 42, 0.5);
+}
+
+.text-neon {
+  color: var(--primary-red);
+  text-shadow: 0 0 5px rgba(255, 42, 42, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #fff, var(--primary-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 5px rgba(255, 42, 42, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(255, 42, 42, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(255, 42, 42, 0.2); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
